@@ -4,11 +4,229 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 3</title>
+    <script src="https://kit.fontawesome.com/d4d819ebf2.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .sora{
+             font-family: "Sora", serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+        .adlam{
+            font-family: "ADLaM Display", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
+    </style>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body>
+    <header class="pt-4 bg-[#EFEBE3]">
+        <nav class="w-3/4 mx-auto flex gap-5 justify-between items-center">
+            <img class="hidden sm:block" src="./c2-assets/logo-header.png" alt="">
+            <img class="sm:hidden" src="./c2-assets/Group.png" alt="">
+
+           <div class="flex justify-between items-center">
+            <div class="ml-[-10%]">
+                <ul class="sm:flex sm:block gap-5 sora text-xl hidden ">
+                    <li>Product</li>
+                    <li>Services</li>
+                    <li>Contact us</li>
+                </ul>
+            </div>
+
+            <div class="hidden sm:block flex gap-5 justify-center items-center">
+                <i class="mr-2 fa-solid fa-magnifying-glass"></i>
+            <i class="mr-2 fa-solid fa-cart-shopping"></i>
+            <button class="btn sora text-xl font-normal bg-transparent border-green-500 px-7 py-2">Login</button>
+            <button class="btn font-normal sora text-xl px-7 py-2 text-white bg-green-700">Register</button>
+           
+            <i class="sm:hidden fa-solid fa-bars"></i>
+          
+            </div>
+           
+           </div>
+        </nav>
+        <div class="text-center mt-22 w-3/4 mx-auto">
+            <h1 class="sm:text-5xl text-4xl font-semibold sora">Freshness <span class="text-[#179800]">You Can</span> <br> <span class="text-[#179800]">Count</span> On, Prices You’ll Love!</h1>
+            <p class="mt-8 mb-9 sora font-normal text-[#111111] text-base">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
+            <img src="./c2-assets/hero-vegetables.png" alt="">
+        </div>
+    </header>
+
+    <main>
+        <div class="w-3/4 mx-auto">
+            <h3 class="mt-[140px] sora text-3xl font-semibold text-[#179800] mb-12"> Services </h3>
+
+            <div class="sm:flex sm:gap-6">
+                <div class="bg-[#EFEBE3] h-[367px] w-[424px] rounded-xl flex justify-center items-center flex-col">
+                    <div class="h-[150px] w-[150px] bg-white rounded-full flex justify-center items-center">
+                        <img class="h-[100px] w-[100px]" src="./c2-assets/service.png" alt="">
+                    </div>
+                    <h3 class="sora text-2xl font-semibold my-4">24/7 Services </h3>
+                    <p class="w-[360px] sora text-lg font-light text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+
+                <div class="bg-[#EFEBE3] h-[367px] w-[424px] rounded-xl flex justify-center items-center flex-col sm:my-0 my-5">
+                    <div class="h-[150px] w-[150px] bg-white rounded-full flex justify-center items-center">
+                        <img class="h-[100px] w-[100px]" src="./c2-assets/delivery.png" alt="">
+                    </div>
+                    <h3 class="sora text-2xl font-semibold my-4">Fast Delivery </h3>
+                    <p class="w-[360px] sora text-lg font-light text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+
+                <div class="bg-[#EFEBE3] h-[367px] w-[424px] rounded-xl flex justify-center items-center flex-col">
+                    <div class="h-[150px] w-[150px] bg-white rounded-full flex justify-center items-center">
+                        <img class="h-[100px] w-[100px]" src="./c2-assets/healthy.png" alt="">
+                    </div>
+                    <h3 class="sora text-2xl font-semibold my-4">Healthy Products </h3>
+                    <p class="w-[360px] sora text-lg font-light text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</p>
+                </div>
+            </div>
+           
+        </div>
+        <!-- Popular Products -->
+        <div class="bg-[#EFEBE3] mt-[140px]">
+            <div class="w-3/4 mx-auto">
+                <h3 class="sora font-semibold text-4xl text-[#179800] pt-[140px] pb-[48px]">Popular Products</h3>
+
+                <div class="grid grid-cols-5 gap-10">
+                    <div class="row-span-3 col-span-2" style="background: linear-gradient(to bottom, #53DB3A, #ffffff);">
+                        <h4 class="adlam text-3xl text-white pl-8 pt-[51px]">30% off</h4>
+                        <p class="pl-8 pt-4">Discover a world of treats, toys, and essentials handpicked for </p>
+                        <div class="pl-8 pt-4">
+                            <button class="btn sora text-xl font-normal bg-white px-7 py-2">Buy Now</button>
+                        </div>
+                        <img class="relative left-[20%]" src="./c2-assets/vegetable-offer.png" alt="">
+                    </div>
+
+
+                    <div class="w-[240px] h-[100px] flex bg-white rounded-xl items-center justify-around">
+                        <div class="w[86px] h-[86px] bg-[#EFEBE3] rounded-xl flex"><img src="./c2-assets/onion.png" alt=""></div>
+                        <div>
+                            <div class="flex gap-3 items-center">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <p class="sora">4.5</p>
+                            </div>
+                            <h4 class="sora">Onion 1KG</h4>
+                            <p class="sora">$39.99</p>
+                        </div>
+                    </div>
     
+                    <div class="w-[240px] h-[100px] flex bg-white rounded-xl items-center justify-around">
+                        <div class="w[86px] h-[86px] bg-[#EFEBE3] rounded-xl flex"><img src="./c2-assets/onion.png" alt=""></div>
+                        <div>
+                            <div class="flex gap-3 items-center">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <p class="sora">4.5</p>
+                            </div>
+                            <h4 class="sora">Onion 1KG</h4>
+                            <p class="sora">$39.99</p>
+                        </div>
+                    </div>
+    
+                    <div class="w-[240px] h-[100px] flex bg-white rounded-xl items-center justify-around">
+                        <div class="w[86px] h-[86px] bg-[#EFEBE3] rounded-xl flex"><img src="./c2-assets/onion.png" alt=""></div>
+                        <div>
+                            <div class="flex gap-3 items-center">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <p class="sora">4.5</p>
+                            </div>
+                            <h4 class="sora">Onion 1KG</h4>
+                            <p class="sora">$39.99</p>
+                        </div>
+                    </div>
+    
+                    <div class="w-[240px] h-[100px] flex bg-white rounded-xl items-center justify-around">
+                        <div class="w[86px] h-[86px] bg-[#EFEBE3] rounded-xl flex"><img src="./c2-assets/onion.png" alt=""></div>
+                        <div>
+                            <div class="flex gap-3 items-center">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <p class="sora">4.5</p>
+                            </div>
+                            <h4 class="sora">Onion 1KG</h4>
+                            <p class="sora">$39.99</p>
+                        </div>
+                    </div>
+    
+                    <div class="w-[240px] h-[100px] flex bg-white rounded-xl items-center justify-around">
+                        <div class="w[86px] h-[86px] bg-[#EFEBE3] rounded-xl flex"><img src="./c2-assets/onion.png" alt=""></div>
+                        <div>
+                            <div class="flex gap-3 items-center">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <p class="sora">4.5</p>
+                            </div>
+                            <h4 class="sora">Onion 1KG</h4>
+                            <p class="sora">$39.99</p>
+                        </div>
+                    </div>
+    
+                    <div class="w-[240px] h-[100px] flex bg-white rounded-xl items-center justify-around">
+                        <div class="w[86px] h-[86px] bg-[#EFEBE3] rounded-xl flex"><img src="./c2-assets/onion.png" alt=""></div>
+                        <div>
+                            <div class="flex gap-3 items-center">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <p class="sora">4.5</p>
+                            </div>
+                            <h4 class="sora">Onion 1KG</h4>
+                            <p class="sora">$39.99</p>
+                        </div>
+                    </div>
+    
+                    <div class="w-[240px] h-[100px] flex bg-white rounded-xl items-center justify-around">
+                        <div class="w[86px] h-[86px] bg-[#EFEBE3] rounded-xl flex"><img src="./c2-assets/onion.png" alt=""></div>
+                        <div>
+                            <div class="flex gap-3 items-center">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <p class="sora">4.5</p>
+                            </div>
+                            <h4 class="sora">Onion 1KG</h4>
+                            <p class="sora">$39.99</p>
+                        </div>
+                    </div>
+    
+                    <div class="w-[240px] h-[100px] flex bg-white rounded-xl items-center justify-around">
+                        <div class="w[86px] h-[86px] bg-[#EFEBE3] rounded-xl flex"><img src="./c2-assets/onion.png" alt=""></div>
+                        <div>
+                            <div class="flex gap-3 items-center">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <p class="sora">4.5</p>
+                            </div>
+                            <h4 class="sora">Onion 1KG</h4>
+                            <p class="sora">$39.99</p>
+                        </div>
+                    </div>
+    
+                    <div class="w-[240px] h-[100px] flex bg-white rounded-xl items-center justify-around">
+                        <div class="w[86px] h-[86px] bg-[#EFEBE3] rounded-xl flex"><img src="./c2-assets/onion.png" alt=""></div>
+                        <div>
+                            <div class="flex gap-3 items-center">
+                                <i class="fa-solid fa-star text-yellow-500"></i>
+                                <p class="sora">4.5</p>
+                            </div>
+                            <h4 class="sora">Onion 1KG</h4>
+                            <p class="sora">$39.99</p>
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+              
+
+                
+                
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+    </footer>
 </body>
 </html>
