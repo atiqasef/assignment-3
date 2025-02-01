@@ -7,7 +7,7 @@
     <script src="https://kit.fontawesome.com/d4d819ebf2.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
     <style>
         .sora{
              font-family: "Sora", serif;
@@ -19,6 +19,11 @@
             font-weight: 400;
             font-style: normal;
         }
+        .poppins{
+            font-family: "Poppins", serif;
+            font-weight: 400;
+            font-style: normal;
+        }
     </style>
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -26,12 +31,12 @@
 </head>
 <body>
     <header class="pt-4 bg-[#EFEBE3]">
-        <nav class="w-3/4 mx-auto flex gap-5 justify-between items-center">
+        <nav class="container mx-auto flex gap-5 justify-between items-center">
             <img class="hidden sm:block" src="./c2-assets/logo-header.png" alt="">
             <img class="sm:hidden" src="./c2-assets/Group.png" alt="">
 
            <div class="flex justify-between items-center">
-            <div class="ml-[-10%]">
+            <div class="ml-[-27%]">
                 <ul class="sm:flex sm:block gap-5 sora text-xl hidden ">
                     <li>Product</li>
                     <li>Services</li>
@@ -51,6 +56,8 @@
            
            </div>
         </nav>
+
+        
         <div class="text-center mt-22 w-3/4 mx-auto">
             <h1 class="sm:text-5xl text-4xl font-semibold sora">Freshness <span class="text-[#179800]">You Can</span> <br> <span class="text-[#179800]">Count</span> On, Prices You’ll Love!</h1>
             <p class="mt-8 mb-9 sora font-normal text-[#111111] text-base">Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br>staples, we’ve got you covered every day!</p>
@@ -59,7 +66,8 @@
     </header>
 
     <main>
-        <div class="w-3/4 mx-auto">
+        <!-- Services -->
+        <div class="container mx-auto">
             <h3 class="mt-[140px] sora text-3xl font-semibold text-[#179800] mb-12"> Services </h3>
 
             <div class="sm:flex sm:gap-6">
@@ -91,7 +99,7 @@
         </div>
         <!-- Popular Products -->
         <div class="bg-[#EFEBE3] mt-[140px]">
-            <div class="w-3/4 mx-auto">
+            <div class="container mx-auto pb-[140px]">
                 <h3 class="sora font-semibold text-4xl text-[#179800] pt-[140px] pb-[48px]">Popular Products</h3>
 
                 <div class="sm:flex sm:gap-10">
@@ -228,6 +236,51 @@
                 
             </div>
         </div>
+
+        <!-- Arrival & Offers Section -->
+        <div class="sm:flex sm:gap-5 container mx-auto mb-[160px]">
+
+            <div class="">
+                <h1 class="mt-[140px] mb-12 text-[#179800] font-semibold text-3xl sora">Arrival & Offers</h1>
+    
+                <div>
+                    <div class="bg-[#115414] sm:w-[680px] w-[480px] h-[300px] flex items-center justify-center rounded-xl gap-5">
+                        <div class="flex flex-col gap-5 justify-center items-center">
+                            <img src="./c2-assets/dawat-logo.png" alt="">
+                            <h4 class="bg-[#63B76D] sora sm:w-80 w:40 sm:px-5 sm:py-3 px-2 py-1 text-center rounded-xl text-white poppins sm:text-2xl text-sm sm:ml-10 ml-0">Cook Exotic Dishes</h4>
+                            <h3 class="poppins sm:text-4xl text-xl text-white">UP to 20% OFF</h3>
+                        </div>
+                        <div>
+                            <img src="./c2-assets/dawat-mock-up.png" alt="">
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+    
+             </div>
+
+
+    
+             <div class="sm:mt-[223px] mt-10">
+                <div>
+                    <div class="bg-[#102861] sm:w-[580px] w-[480px] h-[300px] flex gap-10 items-center justify-start rounded-xl">
+                        <div class="flex flex-col gap-5 items-center">
+                            <img class="sm:ml-[-60%]" src="./c2-assets/india-gate-logo.png" alt="">
+                            <h4 class="bg-[#2A4D97] sora sm:w-80 w-40 sm:px-5 sm:py-3 px-2 py-1 text-center rounded-xl text-white poppins sm:text-2xl text-sm ml-5">World's No.1 Rice</h4>
+                            <h3 class="poppins text-left sm:text-4xl text-xl text-white sm:ml-[-15%]">UP to 20% OFF</h3>
+                        </div>
+                        <div>
+                            <img class="sm:w-full w-40" src="./c2-assets/india-gate-mock-up.png" alt="">
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+    
+             </div>
+
+        </div>
+        <!-- NewsLetter Section -->
+         
     </main>
 
     <footer>
